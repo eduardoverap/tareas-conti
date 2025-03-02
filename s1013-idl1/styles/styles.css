@@ -180,7 +180,7 @@ nav .nav-seleccionado {
 
 #img-inicio {
   margin-top: 50px;
-  background-image: url(../assets/img-experta.jpg);
+  background-image: url(./assets/img-experta.jpg);
   width: 100%;
   height: 200px;
 }
@@ -248,7 +248,7 @@ nav .nav-seleccionado {
 .zigzag {
   width: 75px;
   height: 50px;
-  background-image: url(../assets/zigzag.png);
+  background-image: url(./assets/zigzag.png);
   margin-bottom: 20px;
 }
 
@@ -260,7 +260,7 @@ nav .nav-seleccionado {
 /* Sección con imagen a la izquierda */
 
 #img-farmaceutica {
-  background-image: url(../assets/img-qf.jpg);
+  background-image: url(./assets/img-qf.jpg);
 }
 
 #conferencia-magistral {
@@ -315,7 +315,7 @@ nav .nav-seleccionado {
 
 #img-estudiante {
   width: calc(100% - 80px);
-  background-image: url(../assets/img-estudiante.jpg);
+  background-image: url(./assets/img-estudiante.jpg);
 }
 
 /* Sección con tres bloques */
@@ -329,15 +329,15 @@ nav .nav-seleccionado {
 }
 
 #img-1 {
-  background-image: url(../assets/img-1.jpg);
+  background-image: url(./assets/img-1.jpg);
 }
 
 #img-2 {
-  background-image: url(../assets/img-2.jpg);
+  background-image: url(./assets/img-2.jpg);
 }
 
 #img-3 {
-  background-image: url(../assets/img-3.jpg);
+  background-image: url(./assets/img-3.jpg);
 }
 
 .tres-cols {
@@ -400,7 +400,7 @@ nav .nav-seleccionado {
 /* Imagen del pie de página */
 
 #img-pie {
-  background-image: url(../assets/img-farmacia.jpg);
+  background-image: url(./assets/img-farmacia.jpg);
   height: 250px;
 }
 
