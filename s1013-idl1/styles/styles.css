@@ -1,0 +1,446 @@
+/* CSS general */
+
+:root {
+  --azul: #480ad1;
+  --claro: #f9efe6;
+  --negro: #000101;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--claro);
+  color: var(--negro);
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+h3,
+.num-pequenno {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+section {
+  width: 100%;
+}
+
+.contenedor {
+  width: calc(100% - 225px);
+  max-width: 960px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+}
+
+.contenedor > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.borde-lat-negro {
+  width: calc(100% - 219px);
+  border-left: 3px solid var(--negro);
+  border-right: 3px solid var(--negro);
+}
+
+.lista-nav {
+  list-style-type: none;
+}
+
+.justificar-contenido {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-monocroma {
+  filter: grayscale(1);
+  background-size: cover;
+}
+
+.borde-lat-claro {
+  border-left: 3px solid var(--claro);
+  border-right: 3px solid var(--claro);
+}
+
+/* Estilos de contenedores con borde doble superior e inferior */
+
+.borde-doble {
+  position: relative;
+}
+
+.borde-doble::before,
+.borde-doble::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  border-top: 3px solid var(--negro);
+  border-bottom: 3px solid var(--negro);
+}
+
+.borde-doble::before {
+  top: 104px;
+}
+
+.borde-doble::after {
+  bottom: 104px;
+}
+
+.borde-doble-claro::before,
+.borde-doble-claro::after {
+  border-top: 3px solid var(--claro);
+  border-bottom: 3px solid var(--claro);
+}
+
+/* Barra de navegación */
+
+nav > .contenedor {
+  padding: 60px 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav li > a {
+  color: var(--negro);
+  text-decoration: none;
+  padding: 8px 20px;
+}
+
+nav li:last-child {
+  margin-right: 30px;
+}
+
+nav li > a:hover {
+  border-bottom: 4px solid var(--azul);
+}
+
+nav .nav-seleccionado {
+  font-weight: 600;
+  border-bottom: 4px solid var(--azul);
+}
+
+/* Pantalla de inicio */
+
+#txt-inicio-izq {
+  width: 36.7%;
+  max-width: 450px;
+}
+
+#txt-inicio-izq h2 {
+  margin-bottom: 15px;
+}
+
+#txt-inicio-der {
+  writing-mode: sideways-rl;
+  font-style: italic;
+}
+
+#txt-inicio-der h3 {
+  font-size: 24px;
+}
+
+#img-inicio {
+  margin-top: 50px;
+  background-image: url(../assets/img-experta.jpg);
+  width: 100%;
+  height: 200px;
+}
+
+/* Titular */
+
+#titular {
+  max-width: 1040px;
+  margin: auto;
+  padding: 195px 0;
+  text-align: center;
+}
+
+#titular h2 {
+  max-width: 540px;
+}
+
+#titular h3 {
+  font-size: 21px;
+  color: var(--azul);
+}
+
+/* Sección con dos columnas */
+
+.dos-cols {
+  display: flex;
+}
+
+.dos-cols > div {
+  width: 50%;
+  max-width: 50%;
+}
+
+.bloque-azul,
+.bloque-negro {
+  text-align: center;
+  padding: 75px 40px;
+  color: var(--claro);
+}
+
+.bloque-azul {
+  background-color: var(--azul);
+}
+
+.bloque-negro {
+  background-color: var(--negro);
+}
+
+/* Sección con dos columnas y texto explicativo */
+
+.contenedor-bloques-zigzag {
+  margin: 40px 0;
+}
+
+.bloque-con-zigzag {
+  align-items: flex-start;
+  width: calc(50% - 80px);
+  padding: 40px;
+}
+
+.bloque-con-zigzag p {
+  margin: 25px 0;
+}
+
+.zigzag {
+  width: 75px;
+  height: 50px;
+  background-image: url(../assets/zigzag.png);
+  margin-bottom: 20px;
+}
+
+.num-pequenno {
+  margin: 0;
+  color: var(--azul);
+}
+
+/* Sección con imagen a la izquierda */
+
+#img-farmaceutica {
+  background-image: url(../assets/img-qf.jpg);
+}
+
+#conferencia-magistral {
+  padding: 150px 0;
+}
+
+#conferencia-magistral > div {
+  padding: 0 150px 0 40px;
+  align-items: flex-start;
+}
+
+#conferencia-magistral h4 {
+  color: var(--azul);
+}
+
+#conferencia-magistral p {
+  width: 75%;
+  max-width: 450px;
+  margin-bottom: 25px;
+}
+
+.borde-doble[id='conferencia-magistral']::before {
+  top: 75px;
+}
+
+.borde-doble[id='conferencia-magistral']::after {
+  bottom: 75px;
+}
+
+/* Sección con imagen a la derecha */
+
+.txt-estrecho {
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-right: 150px;
+}
+
+.txt-estrecho h3,
+.txt-estrecho h4 {
+  text-align: left;
+}
+
+.txt-estrecho p {
+  margin-bottom: 25px;
+}
+
+#contenedor-imagen {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#img-estudiante {
+  width: calc(100% - 80px);
+  background-image: url(../assets/img-estudiante.jpg);
+}
+
+/* Sección con tres bloques */
+
+#img-1,
+#img-2,
+#img-3 {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+#img-1 {
+  background-image: url(../assets/img-1.jpg);
+}
+
+#img-2 {
+  background-image: url(../assets/img-2.jpg);
+}
+
+#img-3 {
+  background-image: url(../assets/img-3.jpg);
+}
+
+.tres-cols {
+  max-width: 1040px;
+  display: flex;
+  gap: 40px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.tres-cols > div {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.bloque-num {
+  font-size: 90px;
+  font-weight: 800;
+  border-bottom: 4px solid var(--azul);
+}
+
+.bloque-txt {
+  padding: 30px 0;
+}
+
+/* Preguntas frecuentes */
+
+#faq {
+  background-color: var(--azul);
+}
+
+#faq > div {
+  padding: 100px 0;
+  color: var(--claro);
+}
+
+.borde-doble[id='faq']::before {
+  top: 52px;
+}
+
+.borde-doble[id='faq']::after {
+  bottom: 52px;
+}
+
+#bloque-preguntas {
+  min-width: 480px;
+  width: 60%;
+  max-width: 774px;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Registro de correo electrónico */
+
+#registro-correo {
+  align-items: center;
+  padding: 75px 0;
+}
+
+/* Imagen del pie de página */
+
+#img-pie {
+  background-image: url(../assets/img-farmacia.jpg);
+  height: 250px;
+}
+
+/* Pie de página */
+
+footer {
+  background-color: var(--azul);
+  color: var(--claro);
+}
+
+footer .contenedor {
+  padding: 40px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+footer .flex-columna {
+  align-items: flex-start;
+}
+
+footer ul {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+  gap: 20px 40px;
+}
+
+footer a {
+  color: var(--claro);
+  text-decoration: none;
+}
+
+footer strong a {
+  text-decoration: underline;
+}
+footer a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
